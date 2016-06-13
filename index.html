@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="main">
+    <div class="navigation">
+        <div class="brand">Test API and Promises</div>
+        <div class="tabs btn-group" id="nav-group">
+            <% _.each(tabs, function(tab) { %>
+                <a class="btn btn-square btn-info tab" href="<%= tab.href%>"><%= tab.name%></a>
+            <% }); %>
+        </div>
+    </div>
+    <div class="page container">
+        <div class="hidden" id="users">
+            <div class="compare-users">
+                <h4>Compare Users</h4>
+                <input id="user1" placeholder="type id of first user ..." />
+                <input id="user2" placeholder="type id of second user ..." />
+                <button onclick="usersController.compareUsers()">Compare</button>
+            </div>
+            <table class="table">
+                <caption>Users</caption>
+                <thead>
+                <tr class="row">
+                    <th class="col-md-3">Name</th>
+                    <th class="col-md-3">Phone</th>
+                    <th class="col-md-3">Website</th>
+                    <th class="col-md-3">Company Name</th>
+                </tr>
+                </thead>
+                <tbody id="users-body"></tbody>
+            </table>
+        </div>
+        <div class="hidden" id="comments">
+            <table class="table">
+                <caption>Comments</caption>
+                <thead>
+                <tr class="row">
+                    <th class="col-md-3">Name</th>
+                    <th class="col-md-3">Email</th>
+                    <th class="col-md-6">Comment</th>
+                </tr>
+                </thead>
+                <tbody id="comments-body"></tbody>
+            </table>
+        </div>
+        <div class="hidden" id="posts">
+            <table class="table">
+                <caption>Posts</caption>
+                <thead>
+                <tr class="row">
+                    <th class="col-md-4">Title</th>
+                    <th class="col-md-8">Description</th>
+                </tr>
+                </thead>
+                <tbody id="posts-body"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/underscore.min.js" type="text/javascript"></script>
+<script src="js/api/api.service.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/controllers/users.controller.js" type="text/javascript"></script>
+<script src="js/controllers/comments.controller.js" type="text/javascript"></script>
+<script src="js/controllers/posts.controller.js" type="text/javascript"></script>
+</body>
+</html>

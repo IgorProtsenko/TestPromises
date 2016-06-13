@@ -1,0 +1,65 @@
+body {
+    background-color: #F5F5DC;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+table th {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.main .navigation {
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    border: 1px solid #d4d4d4;
+    padding: 10px 30px;
+}
+
+.main .navigation .brand {
+    color: #0081C2;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.main .navigation .tabs {
+    margin-left: 20px;
+    top: -5px;
+}
+
+.main .navigation .tabs .tab {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+    border: 1px solid #49afcd;
+}
+
+.main #users .compare-users {
+    text-align: right;
+    position: relative;
+    top: 35px;
+}
+
+.main #users .compare-users input {
+    padding: 1px 5px;
+}
